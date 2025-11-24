@@ -1,0 +1,39 @@
+{
+  "name": "castbreeze-app",
+  "version": "1.0.17",
+  "description": "Castbreeze is an integration that allows you to stream audio files and URLs directly to your speakers.",
+  "main": "lib/index.js",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "clean": "rm -rf lib",
+    "prebuild": "npm run clean",
+    "test": "npm run build && jest --testTimeout 10000",
+    "validate": "npm run build && zapier validate",
+    "push": "npm run build && zapier push"
+  },
+  "dependencies": {
+    "zapier-platform-core": "18.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "jest": "^29.7.0",
+    "typescript": "^5.7.2"
+  },
+  "private": true,
+  "exports": "./lib/index.js",
+  "type": "module",
+  "keywords": [
+    "sonos",
+    "audio",
+    "streaming",
+    "cast",
+    "automation"
+  ],
+  "author": "Sem Postma",
+  "license": "UNLICENSED"
+}
