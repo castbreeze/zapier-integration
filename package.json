@@ -7,6 +7,15 @@
   "engines": {
     "node": ">=24.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/castbreeze/zapier-extension.git"
+  },
+  "homepage": "https://castbreeze.com",
+  "bugs": {
+    "url": "https://github.com/castbreeze/zapier-extension/issues",
+    "email": "support@castbreeze.com"
+  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
@@ -34,6 +43,10 @@
     "cast",
     "automation"
   ],
-  "author": "Sem Postma",
-  "license": "UNLICENSED"
+  "author": {
+    "name": "Sem Postma",
+    "email": "spostma@castbreeze.com",
+    "url": "https://castbreeze.com"
+  },
+  "license": "MIT"
 }
